@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    padding: 37px 35px;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 40px;
+    text-decoration: none;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+.grey-line-header {
+    border-color: #E5E5E5;;
+}
+
+/* Header styles end */
+/* Title styles */
+.title {
+    padding-top: 60px;
+    width: 100%;
+}
+
+.title-content {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* transform: translateX(-1%); */
+    gap: 50px;
+    padding-bottom: 35px;
+}
+
+
+.title-text {
+    padding: 5px 1px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.title-text-illustration {
+    padding-bottom: 18px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+h1 {
+    width: 429px;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 28px;
+}
+
+.title-main-inf {
+    padding-bottom: 28px;
+    padding-right: 11px;
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.title-author {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+/* Title styles end */
+/* Posts styles */
+.posts {
+    width: 100%;
+}
+
+.posts-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 65px;
+}
+.posts-content_small {
+    grid-template-columns: repeat(4,1fr);  
+}
+
+/* .posts-cards {
+    padding: 24px;
+} */
+
+.post-cards-text {
+    padding-top: 19px;
+}
+
+.photography {
+    padding-bottom: 18px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+h4 {
+    padding-bottom: 15px;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.post-cards-names {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+.grey-line {
+    width: 1200px;
+    margin: 0 auto;
+    border-color: #E6E6E6;
+}
+
+/* Posts styles end */
+/* Latest posts styles start */
+.latest-posts {
+    width: 100%;
+    padding-top: 90px;
+}
+
+.latest-posts-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1200px;
+    align-items: center;
+}
+
+.latest-posts-name {
+    padding-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-self: flex-start;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.latest-posts-row {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+
+.latest-cards-img {
+    padding-bottom: 20px;
+}
+
+
+.grey-word {
+    padding-bottom: 18px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+h3 {
+    padding-bottom: 15px;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.first-h3 {
+    width: 274px;
+}
+
+.second-h3 {
+    padding-right: 4px;
+    width: 281px;
+}
+.seventh-h3 {
+    width: 231px;
+}
+.cards-author-name {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.latest-posts-btn {
+    width: 205px;
+    margin: 0 auto;
+    padding-bottom: 89px;
+}
+
+.btn {
+    padding: 21px 26px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+/* Latest posts styles end */
+/* Featured posts styles start */
+.featured-posts {
+    /* width: 100%; */
+    padding-top: 89px;
+    padding-bottom: 64px;
+}
+
+.featured-posts-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1200px;
+    align-items: center;
+}
+
+.featured-posts-name {
+    align-self: flex-start;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.featured-posts-rows {
+    display: flex;
+}
+
+.featured-cards {
+    width: 610px;
+    padding: 24px 10px;
+}
+.featured-cards-img {
+    padding-bottom: 20px;
+}
+/* Featured posts styles end */
+/* Footer styles start */
+.footer {
+    background-color: #141414;;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    transform:translateX(-1%);
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 89px;
+    padding-bottom: 89px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 60px;
+}
+
+.footer-logo-text {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.grey-line-footer {
+    width: 1200px;
+    height: 1px;
+    margin: 0 auto;
+    border-color: #4D4D4D;
+}
+
+.footer-main-inf {
+    padding-top: 60px;
+}
+
+.footer-categories {
+    display: flex;
+}
+.footer-main-categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+.footer-grey-word {
+    padding-bottom: 20px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.categories-rows {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.categories-list {
+    flex-basis: 50%;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-categories-input {
+    width: 300px;
+}
+.input-field {
+    display: flex;
+}
+input {
+    padding: 18px 24px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+textarea:focus, input:focus {outline: none;}
+
+.input-btn {
+    width: 79px;
+    background: #000000;
+}
+
+.input-btn p {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-contacts {
+    display: flex;
+    padding-top: 55px;
+}
+.footer-column {
+    align-items: flex-start;
+    width: 225px;
+}
+li {
+    padding-bottom: 10px;
+    list-style: none;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+/* Footer styles end */
