@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header-content, .title-content, .posts-content, .latest-posts-name {
+    max-width: 1200px;
+}
+
 /* Header styles */
 .header {
     top: 0;
@@ -15,23 +25,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1460px;
     margin: 0 auto;
 }
 
-.header-logo {
-    padding: 37px 35px;
-}
 
 .header-link {
     display: inline-block;
     padding: 40px;
-    text-decoration: none;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    text-decoration: none;
     color: #000000;
 }
 .grey-line-header {
@@ -48,8 +51,6 @@
 .title-content {
     display: flex;
     margin: 0 auto;
-    max-width: 1200px;
-    /* transform: translateX(-1%); */
     gap: 50px;
     padding-bottom: 35px;
 }
@@ -65,9 +66,6 @@
 
 .title-text-illustration {
     padding-bottom: 18px;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
@@ -75,11 +73,15 @@
     color: #999999;
 }
 
-h1 {
-    width: 429px;
+h1, h3, h4 {
     font-family: 'Tenor Sans';
     font-style: normal;
     font-weight: 400;
+}
+
+
+h1 {
+    width: 429px;
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase;
@@ -99,8 +101,6 @@ h1 {
 }
 
 .title-author {
-    font-family: 'Libre Franklin';
-    font-style: normal;
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
@@ -121,39 +121,24 @@ h1 {
     column-gap: 20px;
     row-gap: 50px;
     margin: 0 auto;
-    max-width: 1200px;
     padding-bottom: 65px;
 }
 .posts-content_small {
     grid-template-columns: repeat(4,1fr);  
 }
 
-/* .posts-cards {
-    padding: 24px;
-} */
+.posts-content_large {
+    grid-template-columns: repeat(2,1fr); 
+}
+
 
 .post-cards-text {
     padding-top: 19px;
 }
 
-.photography {
-    padding-bottom: 18px;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    /* identical to box height, or 120% */
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #999999;
-}
 
 h4 {
     padding-bottom: 15px;
-    font-family: 'Tenor Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     /* or 120% */
@@ -162,8 +147,6 @@ h4 {
 }
 
 .post-cards-names {
-    font-family: 'Libre Franklin';
-    font-style: normal;
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
@@ -171,7 +154,6 @@ h4 {
     text-transform: uppercase;
     color: #000000;
 }
-
 
 .grey-line {
     width: 1200px;
@@ -182,38 +164,19 @@ h4 {
 /* Posts styles end */
 /* Latest posts styles start */
 .latest-posts {
-    width: 100%;
     padding-top: 90px;
-}
-
-.latest-posts-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 1200px;
-    align-items: center;
+    padding-bottom: 90px;
 }
 
 .latest-posts-name {
     padding-bottom: 30px;
-    max-width: 1200px;
     margin: 0 auto;
-    align-self: flex-start;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #999999;
 }
-
-.latest-posts-row {
-    display: flex;
-    padding-bottom: 50px;
-}
-
 
 .latest-cards-img {
     padding-bottom: 20px;
@@ -222,9 +185,6 @@ h4 {
 
 .grey-word {
     padding-bottom: 18px;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
@@ -234,28 +194,13 @@ h4 {
 
 h3 {
     padding-bottom: 15px;
-    font-family: 'Tenor Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 19px;
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
 }
-.first-h3 {
-    width: 274px;
-}
 
-.second-h3 {
-    padding-right: 4px;
-    width: 281px;
-}
-.seventh-h3 {
-    width: 231px;
-}
 .cards-author-name {
-    font-family: 'Libre Franklin';
-    font-style: normal;
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
@@ -263,12 +208,12 @@ h3 {
     text-transform: uppercase;
     color: #000000;
 }
-.latest-posts-btn {
-    width: 205px;
-    margin: 0 auto;
-    padding-bottom: 89px;
-}
 
+.latest-btn {
+    width: 205px;
+    display: block;
+    margin: 0 auto;
+}
 .btn {
     padding: 21px 26px;
     font-family: 'Libre Franklin';
@@ -283,39 +228,10 @@ h3 {
 /* Latest posts styles end */
 /* Featured posts styles start */
 .featured-posts {
-    /* width: 100%; */
-    padding-top: 89px;
-    padding-bottom: 64px;
+    padding-top: 90px;
+    padding-bottom: 65px;
 }
 
-.featured-posts-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 1200px;
-    align-items: center;
-}
-
-.featured-posts-name {
-    align-self: flex-start;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #999999;
-}
-
-.featured-posts-rows {
-    display: flex;
-}
-
-.featured-cards {
-    width: 610px;
-    padding: 24px 10px;
-}
 .featured-cards-img {
     padding-bottom: 20px;
 }
@@ -323,15 +239,13 @@ h3 {
 /* Footer styles start */
 .footer {
     background-color: #141414;;
-    width: 100%;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    transform:translateX(-1%);
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
     padding-top: 89px;
     padding-bottom: 89px;
 }
@@ -343,9 +257,6 @@ h3 {
 }
 
 .footer-logo-text {
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
@@ -369,16 +280,10 @@ h3 {
 }
 .footer-main-categories {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     margin: 0 auto;
 }
 .footer-grey-word {
     padding-bottom: 20px;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
@@ -389,14 +294,12 @@ h3 {
 .categories-rows {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 
 
 .categories-list {
     flex-basis: 50%;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
@@ -421,9 +324,6 @@ textarea:focus, input:focus {outline: none;}
 }
 
 .input-btn p {
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
@@ -436,15 +336,11 @@ textarea:focus, input:focus {outline: none;}
     padding-top: 55px;
 }
 .footer-column {
-    align-items: flex-start;
     width: 225px;
 }
 li {
     padding-bottom: 10px;
     list-style: none;
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
